@@ -1,0 +1,233 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.img {
+  border-radius: 50%;
+}
+
+body {
+  background-color: #F5FEFC;
+  color: #010E0A
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+
+}
+
+
+
+
+
+.animation{
+  display: flex;
+}
+
+.animation .hidden:nth-child(1){
+  transition-delay: 0ms;
+}
+
+.animation .hidden:nth-child(2){
+  transition-delay: 200ms;
+}
+
+.animation .hidden:nth-child(3){
+  transition-delay: 400ms;
+}
+
+
+.home{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.home-content h1 {
+font-size: 150px;
+font-weight: 700;
+font-family: oswald;
+}
+
+.home-content h3 {
+font-size: 55px;
+font-weight: 700;
+font-family: oswald;
+}
+
+.home-content p {
+font-size: 20px;
+font-family: cantarell;
+}
+
+.drop-in {
+  animation: drop-in 1s ease 200ms backwards;
+ }
+ 
+ .drop-in-2 {
+  animation: drop-in 1200ms ease 500ms backwards;
+ }
+ 
+ @keyframes drop-in {
+  from {
+   opacity: 0;
+   transform: translateY(-100px);
+  }
+  to {
+   opacity: 1;
+   transform: translate(0px);
+  }
+ }
+
+
+.home-links{
+position: absolute;
+bottom: 40px;
+width: 170px;
+display: flex;
+justify-content: space-evenly;
+
+}
+
+.home-links a {
+position: relative;
+display: inline-flex;
+width: 40px;
+height: 40px;
+background: transparent;
+border: 2px solid #10BEE5;
+border-radius: 50%;
+font-size: 25px;
+justify-content: center;
+align-items: center;
+color: #10BEE5;
+}
+
+.GHlink {
+  background-color: #10BEE5;
+  border-color: #10BEE5;
+}
+
+
+.techUsed{
+height: 25vh;
+align-items: center;
+padding: 0 03%;
+
+}
+
+@media only screen and (max-width: 767px) {
+  .techUsed {
+      height: 76vh;
+  }
+}
+
+
+
+.techUsed h1{
+font-size: 56px;
+font-weight: 700;
+padding-top: 40px;
+font-family: Oswald;
+
+}
+
+.tech-used p {
+  font-size: 20px;
+  font-family: cantarell;
+  }
+
+.bg-info{
+border-radius: 04%;
+
+}
+
+
+
+.projects{
+height: 100vh;
+align-items: center;
+padding: 0 03%;
+
+}
+
+.projects h1 {
+  font-size: 54px;
+  font-weight: 700;
+  font-family: oswald;
+  padding-top: 40px;
+  }
+  
+  .projects h3 {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: oswald;
+  }
+
+.projects p {
+  font-size: 18px;
+  font-family: cantarell;
+  }
+
+.projects-content{
+padding-top: 20px;
+
+}
+
+.techIcons{
+position: relative;
+display: inline-flex;
+width: 40px;
+height: 40px;
+font-size: 100px;
+justify-content: center;
+align-items: center;
+color: #10BEE5;
+}
+
+.techIconsSQL{
+  position: relative;
+  display: inline-flex;
+  width: 110px;
+  height: 70px;
+  font-size: 100px;
+  justify-content: center;
+  align-items: center;
+  color: #10BEE5;
+  
+  }
+
+.aboutMe{
+  height: 100vh;
+  align-items: center;
+  padding: 0 03%;
+  
+}
+
+.aboutMe h1 {
+font-size: 56px;
+font-weight: 700;
+font-family: oswald;
+}
+
+.aboutMe h3 {
+font-size: 32px;
+font-weight: 700;
+font-family: oswald;
+}
+
+.aboutMe p {
+font-size: 18px;
+font-family: cantarell;
+}
